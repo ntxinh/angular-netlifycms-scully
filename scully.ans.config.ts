@@ -1,14 +1,14 @@
 import { ScullyConfig } from '@scullyio/scully';
 export const config: ScullyConfig = {
-  projectRoot: "./src",
-  projectName: "ans",
-  pluginDir: './scully/plugins/',
-outDir: './dist/static',
+  projectRoot: './src',
+  projectName: 'ans',
+  // pluginDir: './scully/plugins/',
+  outDir: './dist/static',
   routes: {
-    '/news/:title': {
+    '/news/:slug': {
       type: 'contentFolder',
-      title: {
-        folder: "./mdnews"
+      slug: {
+        folder: './mdnews'
       }
     },
   }

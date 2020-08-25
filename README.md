@@ -26,4 +26,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 npm run build && npm run scully
 # or
 npm run build; npm run scully
+
+npm run scully -- --scanRoutes
 ```
