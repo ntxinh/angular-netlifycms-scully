@@ -1,7 +1,7 @@
 import { ScullyConfig } from '@scullyio/scully';
 export const config: ScullyConfig = {
   projectRoot: "./src",
-  projectName: "aviceda",
+  projectName: "ans",
   pluginDir: './scully/plugins/',
 outDir: './dist/static',
   routes: {

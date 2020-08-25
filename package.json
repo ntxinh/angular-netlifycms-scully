@@ -1,5 +1,5 @@
 {
-  "name": "aviceda",
+  "name": "ans",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "scully": "scully",
     "scully:serve": "scully serve",
-    "dev": "npm run build; npm run scully; npm run scully:serve"
+    "dev": "npm run build && npm run scully && npm run scully:serve"
   },
   "private": true,
   "dependencies": {
