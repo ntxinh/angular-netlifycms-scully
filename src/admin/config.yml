@@ -35,3 +35,9 @@ collections: # A list of collections the CMS should be able to edit
           name: 'body',
           widget: 'markdown'
         }
+      - {
+          label: 'Publish Date',
+          name: 'publishDate',
+          widget: 'date',
+          format: 'MMM d, y'
+        }

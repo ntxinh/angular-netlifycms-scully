@@ -1,0 +1,9 @@
+<h1>NewsTopComponent</h1>
+<div *ngFor="let item of news$ | async">
+  <p>{{ item.publishDate | date: 'mediumDate' }}</p>
+  <p style="color: red">{{ item.title }}</p>
+</div>
+
+<a [routerLink]="['/news']">
+  View All News
+</a>
