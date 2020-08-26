@@ -7,12 +7,17 @@ public_folder: 'assets/images/uploads'
 publish_mode: editorial_workflow
 
 collections: # A list of collections the CMS should be able to edit
-  - name: 'blog' # Used in routes, ie.: /admin/collections/:slug/edit
-    label: 'Blog' # Used in the UI, ie.: "New Post"
-    folder: 'blog' # (src/assets/blog) The path to the folder where the documents are stored
+  - name: 'news' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'News' # Used in the UI, ie.: "New Post"
+    folder: 'mdnews' # (src/assets/blog) The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          required: false
+        }
       - {
           label: 'Description',
           name: 'description',
@@ -25,4 +30,8 @@ collections: # A list of collections the CMS should be able to edit
           widget: 'boolean',
           required: false,
         }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown'
+        }
